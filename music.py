@@ -1,8 +1,8 @@
 from nextcord.ext import commands
-import nextcord, datetime, pytz, asyncio, wavelink as nextwave, math
+import nextcord, datetime, pytz, wavelink as nextwave, math
 
 intents = nextcord.Intents.all()
-client = commands.Bot(command_prefix='$', intents=intents)
+client = commands.Bot(command_prefix='', intents=intents)
 
 @client.event
 async def on_ready():   
@@ -150,8 +150,6 @@ async def play(inter: nextcord.Interaction, 검색: str):
         embed.set_image(url="https://i.imgur.com/fJ264IM.png")
         embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
         msg = await inter.send(embed=embed)
-        await asyncio.sleep(60)
-        await msg.delete()
     vc.inter = inter
     try:
       setattr(vc, "loop", False)
@@ -432,3 +430,5 @@ async def queue(inter: nextcord.Interaction):
     embed = nextcord.Embed(title=f"현재 {vc.track.title}을 재생중이에요!",color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/P3EhfEd.png")
     embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+
+  bot.run("토큰 입력")
