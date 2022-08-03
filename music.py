@@ -431,4 +431,4 @@ async def queue(inter: nextcord.Interaction):
     embed.set_image(url="https://i.imgur.com/P3EhfEd.png")
     embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
 
-  bot.run("토큰 입력")
+  client.run("토큰 입력")
