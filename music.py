@@ -140,7 +140,7 @@ async def play(inter: nextcord.Interaction, 검색: str):
         embed = nextcord.Embed(title=f"{text}을/를 재생합니다!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/fJ264IM.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         await inter.send(embed=embed, view=view)
         await view.wait()
     else:
@@ -148,7 +148,7 @@ async def play(inter: nextcord.Interaction, 검색: str):
         embed = nextcord.Embed(title=f"{text}을/를 재생목록에 넣었어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/fJ264IM.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         msg = await inter.send(embed=embed)
     vc.inter = inter
     try:
@@ -164,33 +164,33 @@ async def play(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     vc: nextwave.Player = inter.guild.voice_client
     await vc.pause()
     embed = nextcord.Embed(title=f"{vc.track.title}을/를 일시정지 했습니다!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!", 
     color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
     await inter.send(embed=embed)
 
 #=================================================================================================================================
@@ -201,26 +201,26 @@ async def play(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/EtUro3U.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/EtUro3U.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
@@ -230,12 +230,12 @@ async def play(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"이미 재생중이에요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/EtUro3U.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     embed = nextcord.Embed(title=f"{vc.track.title}을/를 다시 재생 했습니다!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!", 
     color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/EtUro3U.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
     await inter.send(embed=embed)
 
 #=================================================================================================================================
@@ -246,26 +246,26 @@ async def play(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
@@ -274,7 +274,7 @@ async def play(inter: nextcord.Interaction):
     embed = nextcord.Embed(title=f"봇이 음성 채널에서 나갔습니다!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
     color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/zPhmAMr.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
     return await inter.send(embed=embed)
 
 #=================================================================================================================================
@@ -285,13 +285,13 @@ async def play(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/zPhmAMr.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/zPhmAMr.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
@@ -300,7 +300,7 @@ async def play(inter: nextcord.Interaction):
     embed = nextcord.Embed(title=f"봇이 음성 채널에 입장했습니다!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
     color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/zPhmAMr.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
     return await inter.send(embed=embed)
 
 #=================================================================================================================================
@@ -311,26 +311,26 @@ async def loop(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/E8qyOoO.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/E8qyOoO.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
@@ -339,14 +339,14 @@ async def loop(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"반복이 활성화 되었어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/E8qyOoO.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         setattr(vc, "loop", False)
         embed = nextcord.Embed(title=f"반복이 비활성화 되었어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/E8qyOoO.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
 
 #=================================================================================================================================
@@ -357,26 +357,26 @@ async def queue(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/j4glhMy.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/j4glhMy.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/j4glhMy.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/j4glhMy.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
@@ -386,7 +386,7 @@ async def queue(inter: nextcord.Interaction):
 
     embed = nextcord.Embed(title=f"재생 목록!",color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/j4glhMy.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
     queue = vc.queue.copy()
     song_count = 0
     for song in queue:
@@ -403,32 +403,32 @@ async def queue(inter: nextcord.Interaction):
         embed = nextcord.Embed(title=f"음성 채널에 먼저 들어가 주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/P3EhfEd.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     elif not inter.user.voice:
         embed = nextcord.Embed(title=f"음성 채널에 들어가주세요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/P3EhfEd.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     try:
         if inter.user.voice.channel.id != inter.guild.me.voice.channel.id:
             embed = nextcord.Embed(title=f"유저님의 음성 채널 봇의 음성 채널이 달라요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
             color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
             embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-            embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+            embed.set_footer(text="Bot made by", icon_url="푸터 URL")
             return await inter.send(embed=embed)
     except:
         embed = nextcord.Embed(title=f"봇이 음성 채널에 없어요!", description="노래가 중간의 멈출 수 있습니다!\n봇을 강제로 내보내면 에러가 납니다!",
         color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
         embed.set_image(url="https://i.imgur.com/Q0lTAoz.png")
-        embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+        embed.set_footer(text="Bot made by", icon_url="푸터 URL")
         return await inter.send(embed=embed)
     else:
         vc: nextwave.Player = inter.guild.voice_client
     
     embed = nextcord.Embed(title=f"현재 {vc.track.title}을 재생중이에요!",color=0xffcccc,timestamp=datetime.datetime.now(pytz.timezone('UTC')))
     embed.set_image(url="https://i.imgur.com/P3EhfEd.png")
-    embed.set_footer(text="Bot made by 시바-스튜디오", icon_url="https://cdn.discordapp.com/attachments/997811966032756778/1002342070394028052/-_-001_22.png")
+    embed.set_footer(text="Bot made by", icon_url="푸터 URL")
 
-  client.run("토큰 입력")
+client.run("토큰 입력")
