@@ -23,7 +23,7 @@ async def node_connect():
 
 @client.event
 async def on_voice_state_update(member, before, after):
-    if member.id == 1002210936876175481 and before.channel is not None and after.channel is None:
+    if member.id == 봇ID and before.channel is not None and after.channel is None:
         vc: nextwave.Player = member.guild.voice_client
         vc.queue.clear()
         await vc.disconnect()
