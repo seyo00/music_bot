@@ -113,7 +113,6 @@ class music_buttons(nextcord.ui.View):
 
 @client.event   
 async def on_wavelink_track_end(player:nextwave.Player, track: nextwave.Track, reason):
-    inter = player.inter
     vc: player = inter.guild.voice_client
     if vc.loop:
         return await vc.play(track)
@@ -122,7 +121,6 @@ async def on_wavelink_track_end(player:nextwave.Player, track: nextwave.Track, r
         return await vc.disconnect()
     next_song = vc.queue.get()
     await vc.play(next_song)
-    await inter.send(f"다음 노래 : {next_song.title}")
 
 @client.slash_command(name='재생', description='노래를 재생할 수 있습니다.')
 async def play(inter: nextcord.Interaction, 검색: str):
